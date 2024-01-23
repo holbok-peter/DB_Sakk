@@ -4,7 +4,7 @@ CREATE DATABASE sakk DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
 
 USE sakk;
 
-CREATE TABLE sakkozo (
+CREATE TABLE sakkozók (
     id INT PRIMARY KEY,
     szulnev VARCHAR(255),
     nem CHAR(1),
@@ -13,7 +13,7 @@ CREATE TABLE sakkozo (
     szuldatum DATE
 );
 
-CREATE TABLE versenyzo (
+CREATE TABLE versenyzők (
     id INT PRIMARY KEY,
     sakkozoid INT,
     nev VARCHAR(255),
@@ -21,7 +21,7 @@ CREATE TABLE versenyzo (
     FOREIGN KEY (sakkozoid) REFERENCES sakkozo(id)
 );
 
-CREATE TABLE elopont (
+CREATE TABLE élőpontok (
     helyezes INT,
     pontszam INT,
     jatek INT,
@@ -31,7 +31,7 @@ CREATE TABLE elopont (
     FOREIGN KEY (versenyzoid) REFERENCES versenyzo(id)
 );
 
-CREATE TABLE ranglista (
+CREATE TABLE ranglisták (
     id INT PRIMARY KEY,
     datum DATE
 );
