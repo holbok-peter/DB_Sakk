@@ -29,11 +29,7 @@ CREATE TABLE élőpontok (
     ranglistaid INT,
     PRIMARY KEY (versenyzoid, ranglistaid),
     FOREIGN KEY (versenyzoid) REFERENCES versenyzők(id)
-<<<<<<< HEAD
-=======
-    
->>>>>>> 7fc2a2f5631f5e2bf302db73870fed67ce7f26b0
-);
+    );
 
 CREATE TABLE ranglisták (
     id INT PRIMARY KEY,
@@ -5823,3 +5819,13 @@ INSERT INTO ranglisták (id, datum) VALUES
     ('51', '2011.11.01')
 
 UPDATE ranglisták
+SET datum = '2000.07.01'
+WHERE id = 1;
+
+UPDATE ranglisták
+SET datum = '2000.10.01'
+WHERE id = 2;
+
+UPDATE ranglisták
+SET datum = '2001.01.01'
+WHERE id = 3;
