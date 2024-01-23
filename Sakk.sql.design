@@ -11,7 +11,7 @@
   <Connection>
     <ConnectionModel>
       <PropertyValue Name="Database">59f90733-4d68-4fdf-82a7-f0fcbf5460aa</PropertyValue>
-      <PropertyValue Name="ConnectionString" xml:space="preserve">User Id=root;Host=localhost;Database=mysql;Character Set=utf8</PropertyValue>
+      <PropertyValue Name="ConnectionString" xml:space="preserve">User Id=root;Host=localhost;Character Set=utf8</PropertyValue>
       <PropertyValue Name="ExecutionTimeout">0</PropertyValue>
     </ConnectionModel>
     <Database>sakk</Database>

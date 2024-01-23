@@ -18,7 +18,7 @@ CREATE TABLE versenyzők (
     sakkozoid INT,
     nev VARCHAR(255),
     orszag VARCHAR(3),
-    FOREIGN KEY (sakkozoid) REFERENCES sakkozo(id)
+    FOREIGN KEY (sakkozoid) REFERENCES sakkozók(id)
 );
 
 CREATE TABLE élőpontok (
@@ -28,7 +28,8 @@ CREATE TABLE élőpontok (
     versenyzoid INT,
     ranglistaid INT,
     PRIMARY KEY (versenyzoid, ranglistaid),
-    FOREIGN KEY (versenyzoid) REFERENCES versenyzo(id)
+    FOREIGN KEY (versenyzoid) REFERENCES versenyzők(id)
+    
 );
 
 CREATE TABLE ranglisták (
