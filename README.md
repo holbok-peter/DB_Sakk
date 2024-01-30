@@ -1,10 +1,12 @@
 ###3. Sakk
+
 A sakkot – bár nem tartozik a látványsportok közé – igen sokan követik figyelemmel.
 A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő-pontszám alapján
 állapítanak meg. A ranglistát évente többször is kiadják. Az adatbázis a 2000 és 2011 közötti
 ranglisták első 100 játékosának adatait tartalmazza.
 
 ###Táblák:
+
 **sakkozo** (*id, szulnev, nem, szulorszag, szulovaros, szuldatum*)
 >1. *id*     =>    A sakkozó azonosítója (szám), ez a kulcs
 >2. *szulnev*   =>           A sakkozó születési neve (szöveg)
