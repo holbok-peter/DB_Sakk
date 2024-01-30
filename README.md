@@ -3,11 +3,7 @@ A sakkot – bár nem tartozik a látványsportok közé – igen sokan követik
 A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő-pontszám alapján
 állapítanak meg. A ranglistát évente többször is kiadják. Az adatbázis a 2000 és 2011 közötti
 ranglisták első 100 játékosának adatait tartalmazza.
-1. Készítsen új adatbázist sakk néven! A mellékelt négy – tabulátorokkal tagolt, UTF-8
-kódolású – szöveges állományt (_sakkozo.txt, versenyzo.txt, elopont.txt,
-ranglista.txt_) importálja az adatbázisba a fájlnévvel azonos néven (__sakkozo,
-versenyzo, elopont, ranglista__)! Az állomány első sora a mezőneveket tartalmazza.
-A létrehozás során állítsa be a megfelelő típusokat és kulcsokat! 
+
 ###Táblák:
 **sakkozo** (*id, szulnev, nem, szulorszag, szulovaros, szuldatum*)
 >1. *id*     =>    A sakkozó azonosítója (szám), ez a kulcs
