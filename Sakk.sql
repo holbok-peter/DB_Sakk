@@ -27,8 +27,8 @@ CREATE TABLE élőpontok (
     jatek INT,
     versenyzoid INT,
     ranglistaid INT,
-    PRIMARY KEY (versenyzoid, ranglistaid),
-    FOREIGN KEY (versenyzoid) REFERENCES versenyzők(id)
+    PRIMARY KEY helyezésID (versenyzoid, ranglistaid),
+    FOREIGN KEY versenyzőkID (versenyzoid) REFERENCES versenyzők(id)
     );
 
 CREATE TABLE ranglisták (
@@ -38,12 +38,12 @@ CREATE TABLE ranglisták (
 
 INSERT INTO sakkozók (id, szulnev, nem, szulorszag, szulovaros, szuldatum)
 VALUES
-    ('1', 'Korcsnoj, Viktor Lvovics', 'F', 'URS', 'Leningrad', '1931.03.23')
-    ('2', 'Portisch, Lajos', 'F', 'HUN', 'Zalaegerszeg', '1937.04.04')
-    ('3', 'Tukmakov, Vladimir B', 'F', 'URS', 'Odessa', '1946.03.15')
-    ('4', 'Gulko, Boris F', 'F', 'GDR', 'Erfurt', '1947.02.09')
-    ('5', 'Huebner, Robert', 'F', 'FRG', 'Cologne', '1948.11.06')
-    ('6', 'Karpov, Anatoly', 'F', 'URS', 'Zlatoust', '1951.05.23')
+    ('1', 'Korcsnoj, Viktor Lvovics', 'F', 'URS', 'Leningrad', '1931.03.23'),
+    ('2', 'Portisch, Lajos', 'F', 'HUN', 'Zalaegerszeg', '1937.04.04'),
+    ('3', 'Tukmakov, Vladimir B', 'F', 'URS', 'Odessa', '1946.03.15'),
+    ('4', 'Gulko, Boris F', 'F', 'GDR', 'Erfurt', '1947.02.09'),
+    ('5', 'Huebner, Robert', 'F', 'FRG', 'Cologne', '1948.11.06'),
+    ('6', 'Karpov, Anatoly', 'F', 'URS', 'Zlatoust', '1951.05.23'),
     ('7', 'Andersson, Ulf', 'F', 'SWE', 'Västerås', '1951.06.27')
     ('8', 'Vaganian, Rafael Artemovich', 'F', 'URS', 'Yerevan', '1951.10.15')
     ('9', 'Timman, Jan Hendrik', 'F', 'NED', 'Amsterdam', '1951.12.14')
@@ -5817,15 +5817,4 @@ INSERT INTO ranglisták (id, datum) VALUES
     ('49', '2011.07.01')
     ('50', '2011.09.01')
     ('51', '2011.11.01')
-
-UPDATE ranglisták
-SET datum = '2000.07.01'
-WHERE id = 1;
-
-UPDATE ranglisták
-SET datum = '2000.10.01'
-WHERE id = 2;
-
-UPDATE ranglisták
-SET datum = '2001.01.01'
-WHERE id = 3;
+  

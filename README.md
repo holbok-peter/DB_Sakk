@@ -17,6 +17,15 @@ A létrehozás során állítsa be a megfelelő típusokat és kulcsokat!
 >5. *szulovaros*     =>          Annak a városnak a neve, ahol a sakkozó született (szöveg). Ha nem ismert, akkor üres.
 >6. *szuldatum*        =>        A sakkozó születési dátuma (dátum) 
 
+| Név | Típus | Leírás | Kulcs |
+|--|--|:-:|:-|
+| *id* | int() |  |  |
+| *szulnev* |  |  | a value |
+| *nem* |  |  |  |
+| *szulorszag* |  | This is a long value | but why? |
+| *szulovaros* |  |  |  |
+| *szuldatum* |  |  | Here is something |
+
 Egy sakkozó pályafutása során gyakran más ország, akár országok színeiben versenyez, mint
 ahol született. Előfordul, hogy az országváltással a sakkozó neve is megváltozik. Ez jelenik
 meg a **versenyzo** táblában.
