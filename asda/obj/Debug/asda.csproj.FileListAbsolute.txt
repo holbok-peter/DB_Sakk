@@ -1,7 +1,0 @@
-Z:\11A\ADAT_B\DB_Sakk\asda\bin\Debug\asda.exe.config
-Z:\11A\ADAT_B\DB_Sakk\asda\bin\Debug\asda.exe
-Z:\11A\ADAT_B\DB_Sakk\asda\bin\Debug\asda.pdb
-Z:\11A\ADAT_B\DB_Sakk\asda\obj\Debug\asda.csproj.AssemblyReference.cache
-Z:\11A\ADAT_B\DB_Sakk\asda\obj\Debug\asda.csproj.CoreCompileInputs.cache
-Z:\11A\ADAT_B\DB_Sakk\asda\obj\Debug\asda.exe
-Z:\11A\ADAT_B\DB_Sakk\asda\obj\Debug\asda.pdb
