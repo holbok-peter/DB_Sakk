@@ -33,6 +33,7 @@ CREATE TABLE élőpontok (
     versenyzoId INT,
     ranglistaId INT,
     PRIMARY KEY (versenyzoId, ranglistaId),
+    FOREIGN KEY (ranglistaId)  REFERENCES ranglisták(id),
     FOREIGN KEY (versenyzoId) REFERENCES versenyzők(id)
 );
 
