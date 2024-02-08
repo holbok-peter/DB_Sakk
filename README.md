@@ -14,7 +14,7 @@ ranglisták első 100 játékosának adatait tartalmazza.
 >6. *szuldatum*        =>        A sakkozó születési dátuma (dátum) 
 
 | Név | Típus | Leírás | Kulcs |
-|--|--|:-:|:-|
+|--|:--:|:--:|--:|
 | *id* | int() |  |  |
 | *szulnev* |  |  | a value |
 | *nem* |  |  |  |

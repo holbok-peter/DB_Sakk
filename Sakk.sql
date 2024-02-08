@@ -1,4 +1,4 @@
-﻿DROP DATABASE IF EXISTS sakk;
+﻿DROP DATABASE IF EXISTS sakk; 
 
 CREATE DATABASE sakk DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
 
@@ -14,7 +14,7 @@ CREATE TABLE sakkozók (
 );
 
 CREATE TABLE versenyzők (
-    id INT PRIMARY KEY,6
+    id INT PRIMARY KEY,
     sakkozoId INT,
     nev VARCHAR(255),
     orszag VARCHAR(3),
