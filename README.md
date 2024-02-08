@@ -1,11 +1,9 @@
 ### 3. Sakk
 A sakkot – bár nem tartozik a látványsportok közé – igen sokan követik figyelemmel.
-A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő-pontszám alapján
-állapítanak meg. A ranglistát évente többször is kiadják. Az adatbázis a 2000 és 2011 közötti
-ranglisták első 100 játékosának adatait tartalmazza.
+A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő-pontszám alapján állapítanak meg. A ranglistát évente többször is kiadják. Az adatbázis a 2000 és 2011 közötti ranglisták első valahány játékosának adatait tartalmazza.
 
 ### Táblák:
-**sakkozo** (*id, szulnev, nem, szulorszag, szulovaros, szuldatum*)
+**sakkozók** (*id, szulnev, nem, szulorszag, szulovaros, szuldatum*)
 >1. *id*     =>    A sakkozó azonosítója (szám), ez a kulcs
 >2. *szulnev*   =>           A sakkozó születési neve (szöveg)
 >3. *nem* => A sakkozó neme (szöveg), F (férfi) vagy N (nő)
@@ -15,25 +13,25 @@ ranglisták első 100 játékosának adatait tartalmazza.
 
 | Név | Típus | Leírás | Kulcs |
 |--|--|:-:|:-|
-| *id* | int() |  |  |
-| *szulnev* |  |  | a value |
-| *nem* |  |  |  |
-| *szulorszag* |  | This is a long value | but why? |
-| *szulovaros* |  |  |  |
-| *szuldatum* |  |  | Here is something |
+| *id* | INT |  |  |
+| *szulnev* | VARCHAR |  | a value |
+| *nem* | CHAR |  |  |
+| *szulorszag* | VARCHAR | This is a long value | but why? |
+| *szulovaros* | VARCHAR |  |  |
+| *szuldatum* | DATE |  | Here is something |
 
 Egy sakkozó pályafutása során gyakran más ország, akár országok színeiben versenyez, mint
 ahol született. Előfordul, hogy az országváltással a sakkozó neve is megváltozik. Ez jelenik
 meg a **versenyzo** táblában.
 
-__versenyzo__ (_id, sakkozoid, nev, orszag_)
+__versenyzők__ (_id, sakkozoid, nev, orszag_)
 >1. _id_ => A versenyző azonosítója (szám), ez a kulcs
 >2. _sakkozoid_ => A versenyzőt mint személyt megadó azonosító (szám)
 >3. _nev_ => A versenyző adott országban viselt neve (szöveg)
 >4. _orszag_ => Megadja az ország nevének az olimpiai rövidítését, amelynek
 képviseletében versenyez a versenyző (szöveg)
 
-**elopont** (_helyezes, pontszam, jatek, versenyzoid, ranglistaid_)
+**elopontok** (_helyezes, pontszam, jatek, versenyzoid, ranglistaid_)
 >1. _helyezes_ => A versenyző helyezése (szám), az adatbázis csak a legjobb 100
 eredményeit tartalmazza
 >2. _pontszam_ => A versenyző az adott ranglista összeállításakor birtokolt pontszáma
@@ -43,12 +41,14 @@ eredményeit tartalmazza
 >4. _versenyzoid_ => A versenyző azonosítója (szám) 
 >5. _ranglistaid_ => A ranglista azonosítója (szám) 
 
-__ranglista__ (*id, datum*)
+__ranglisták__ (*id, datum*)
 >1. _id_ => A ranglista azonosítója (szám), ez a kulcs. A megoldás során
 felhasználhatja, hogy az azonosítók időrendben követik egymást, a tábla
 rekordjai *id* szerint rendezettek.
 >2. _datum_ => A ranglista összeállításának dátuma (dátum)
 ez a  kulcs
+
+
 
 2. Tölts fel a __sakkozók__ táblába a következő adatokat:
 > Korchnoi, Viktor Lvovics egy férfi aki URS, Leningrádban született 1931.03.23-én
