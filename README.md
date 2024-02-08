@@ -50,6 +50,8 @@ rekordjai *id* szerint rendezettek.
 >2. _datum_ => A ranglista összeállításának dátuma (dátum)
 ez a  kulcs
 
+![](/képek/table.png)
+
 2. Tölts fel a __sakkozók__ táblába a következő adatokat:
 > Korchnoi, Viktor Lvovics egy férfi aki URS, Leningrádban született 1931.03.23-én
 > Portisch, Lajos egy férfi aki HUN, Zalaegerszeg született 1937.04.04-én
