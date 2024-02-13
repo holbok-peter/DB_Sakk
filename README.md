@@ -5,7 +5,7 @@ A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő
 ### Táblák:
 **sakkozók** (*id, szulnev, nem, szulorszag, szulovaros, szuldatum*)
 | Név | Típus | Leírás | Kulcs | Idegen kulcs |
-|--|--|:-:|:-|--|
+|:-:|:-:|:-:|:-:|:-:|
 | *id* | INT | A sakkozók azonosítója | X |
 | *szulnev* | VARCHAR | A sakkozók szül. neve |  |
 | *nem* | CHAR | A sakkozó neme |  |
