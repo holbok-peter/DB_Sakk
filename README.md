@@ -14,13 +14,13 @@ ranglisták első 100 játékosának adatait tartalmazza.
 >6. *szuldatum*        =>        A sakkozó születési dátuma (dátum) 
 
 | Név | Típus | Leírás | Kulcs |
-|--|:--:|:--:|--:|
-| *id* | int() |  |  |
-| *szulnev* |  |  | a value |
+|--|:--:|:--:|:--:|
+| *id* |  |  | X |
+| *szulnev* |  |  |  |
 | *nem* |  |  |  |
-| *szulorszag* |  | This is a long value | but why? |
+| *szulorszag* |  |  |  |
 | *szulovaros* |  |  |  |
-| *szuldatum* |  |  | Here is something |
+| *szuldatum* |  |  |  |
 
 Egy sakkozó pályafutása során gyakran más ország, akár országok színeiben versenyez, mint
 ahol született. Előfordul, hogy az országváltással a sakkozó neve is megváltozik. Ez jelenik
