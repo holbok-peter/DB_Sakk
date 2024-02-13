@@ -15,14 +15,15 @@ A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő
 
 Egy sakkozó pályafutása során gyakran más ország, akár országok színeiben versenyez, mint
 ahol született. Előfordul, hogy az országváltással a sakkozó neve is megváltozik. Ez jelenik
-meg a **versenyzo** táblában.
+meg a **versenyzők** táblában.
 
-__versenyzők__ (_id, sakkozoid, nev, orszag_)
->1. _id_ => A versenyző azonosítója (szám), ez a kulcs
->2. _sakkozoid_ => A versenyzőt mint személyt megadó azonosító (szám)
->3. _nev_ => A versenyző adott országban viselt neve (szöveg)
->4. _orszag_ => Megadja az ország nevének az olimpiai rövidítését, amelynek
-képviseletében versenyez a versenyző (szöveg)
+**versenyzők**(*id, sakkozoID, név, ország*)
+| Név | Típus | Leírás | Kulcs | Idegen kulcs |
+|--|:-:|:-:|:-:|:-:|
+| *id* | INT | A versenyző azonosítója | X |  |
+| *sakkozoID* | INT | A versenyző mint személy megadó azonosítója |  | X |
+| *név*| VARCHAR | A versenyző neve |  |  |
+| *ország* | VARCHAR | A versenyző átlal képviselt ország |  |  |
 
 __ranglisták__ (*id, datum*)
 
