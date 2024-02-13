@@ -4,21 +4,14 @@ A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő
 
 ### Táblák:
 **sakkozók** (*id, szulnev, nem, szulorszag, szulovaros, szuldatum*)
->1. *id*     =>    A sakkozó azonosítója (szám), ez a kulcs
->2. *szulnev*   =>           A sakkozó születési neve (szöveg)
->3. *nem* => A sakkozó neme (szöveg), F (férfi) vagy N (nő)
->4. *szulorszag* =>             Azon ország nevének olimpiai rövidítése, ahol a sakkozó született (szöveg)
->5. *szulovaros*     =>          Annak a városnak a neve, ahol a sakkozó született (szöveg). Ha nem ismert, akkor üres.
->6. *szuldatum*        =>        A sakkozó születési dátuma (dátum) 
-
-| Név | Típus | Leírás | Kulcs |
-|--|--|:-:|:-|
-| *id* | INT |  |  |
-| *szulnev* | VARCHAR |  | a value |
-| *nem* | CHAR |  |  |
-| *szulorszag* | VARCHAR | This is a long value | but why? |
-| *szulovaros* | VARCHAR |  |  |
-| *szuldatum* | DATE |  | Here is something |
+| Név | Típus | Leírás | Kulcs | Idegen kulcs |
+|--|--|:-:|:-|--|
+| *id* | INT | A sakkozók azonosítója | X |
+| *szulnev* | VARCHAR | A sakkozók szül. neve |  |
+| *nem* | CHAR | A sakkozó neme |  |
+| *szulorszag* | VARCHAR | A sakkozó szül. országának monogrammja |
+| *szulovaros* | VARCHAR | A sakkozó szül. városa ha nem ismert akkor üres|  |
+| *szuldatum* | DATE | A sakkozó születési dátuma |  |
 
 Egy sakkozó pályafutása során gyakran más ország, akár országok színeiben versenyez, mint
 ahol született. Előfordul, hogy az országváltással a sakkozó neve is megváltozik. Ez jelenik
@@ -48,6 +41,10 @@ rekordjai *id* szerint rendezettek.
 >2. _datum_ => A ranglista összeállításának dátuma (dátum)
 ez a  kulcs
 
+
+
+=======
+![](/képek/table.png)
 
 
 2. Tölts fel a __sakkozók__ táblába a következő adatokat:
