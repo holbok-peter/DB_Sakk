@@ -10,7 +10,7 @@ A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő
 | *szulnev* | VARCHAR | A sakkozók szül. neve |  |
 | *nem* | CHAR | A sakkozó neme |  |
 | *szulorszag* | VARCHAR | A sakkozó szül. országának monogrammja |
-| *szulovaros* | VARCHAR | A sakkozó szül. városa ha nem ismert akkor üres|  |
+| *szulovaros* | VARCHAR | A sakkozó szül. városa ha ismeretlen akkor üres|  |
 | *szuldatum* | DATE | A sakkozó születési dátuma |  |
 
 Egy sakkozó pályafutása során gyakran más ország, akár országok színeiben versenyez, mint
@@ -24,26 +24,24 @@ __versenyzők__ (_id, sakkozoid, nev, orszag_)
 >4. _orszag_ => Megadja az ország nevének az olimpiai rövidítését, amelynek
 képviseletében versenyez a versenyző (szöveg)
 
-**elopontok** (_helyezes, pontszam, jatek, versenyzoid, ranglistaid_)
->1. _helyezes_ => A versenyző helyezése (szám), az adatbázis csak a legjobb 100
-eredményeit tartalmazza
->2. _pontszam_ => A versenyző az adott ranglista összeállításakor birtokolt pontszáma
-(szám)
->3. _jatek_ => A versenyző által az előző ranglistakészítés óta játszott partik száma
-(szám)
->4. _versenyzoid_ => A versenyző azonosítója (szám) 
->5. _ranglistaid_ => A ranglista azonosítója (szám) 
-
 __ranglisták__ (*id, datum*)
->1. _id_ => A ranglista azonosítója (szám), ez a kulcs. A megoldás során
-felhasználhatja, hogy az azonosítók időrendben követik egymást, a tábla
-rekordjai *id* szerint rendezettek.
->2. _datum_ => A ranglista összeállításának dátuma (dátum)
-ez a  kulcs
+
+| Név | Típus | Leírás | Kulcs | Idegen kulcs |
+|:-:|:-:|:-:|:-:|:-:|
+| *Id* | INT | A ranglista azonosítója | X |  |
+| *datum* | DATE | A ranglista összeállításának dátuma |  |  |
+
+**elopontok** (_helyezes, pontszam, jatek, versenyzoid, ranglistaid_)
+
+| Név | Típus | Leírás | Kulcs | Idegen kulcs |
+|:-:|:-:|:-:|:-:|:-:|
+| *helyezes* | INT | A versenyző helyezése |  |  |
+| *pontszam* | INT | A versenyző által birtokolt pontszám |  |  |
+| *jatek* | INT | Az előző rangl.készítés óta játszott partik sz. |  |  |
+| *versenyzoId* | INT | A versenyző azonosítója |  | X |
+| *ranglistaId* | INT | A ranglista azonosítója |  | X |
 
 
-
-=======
 ![](/képek/table.png)
 
 
