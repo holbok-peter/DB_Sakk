@@ -43,7 +43,7 @@ __ranglisták__ (*id, datum*)
 | *ranglistaId* | INT | A ranglista azonosítója |  | X |
 
 
-![](/képek/table.png)
+![](/képek/tábla.png)
 
 
 2. Tölts fel a __sakkozók__ táblába a következő adatokat:
