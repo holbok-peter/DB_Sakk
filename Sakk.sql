@@ -286,7 +286,7 @@ VALUES
 ( 276,"Wojtaszek, RadosĹ‚aw","F","POL","ElblÄ…g","1987-01-13"),
 ( 277,"Vitiugov, Nikita","F","URS","Leningrad","1987-02-04"),
 ( 278,"Stellwagen, DaniĂ«l","F","NED","Soest","1987-03-01"),
-( 279,"Balogh, Csaba","F","HUN","Budapest","1987-03-10"),
+( 279,"Balogh, Csaba","F","HUN","Budapest","1987-03-20"),
 ( 280,"Radjabov, Teimour","F","URS","Baku","1987-03-12"),
 ( 281,"Wang, Yue","F","CHN","Taiyuan","1987-03-31"),
 ( 282,"PredojeviÄ‡, Borki","F","YUG","TesliÄ‡","1987-04-06"),
@@ -316,9 +316,7 @@ VALUES
 ( 307,"LĂŞ, Quang LiĂŞm","F","VIE","Ho Chi Minh City","1991-03-13"),
 ( 308,"Caruana, Fabiano Luigi","F","USA","Miami","1992-07-30"),
 ( 309,"Ding, Liren","F","CHN","Wenzhou","1992-10-24"),
-( 310,"So, Wesley","F","PHI","Bacoor","1993-10-09"),
-( 311,"Yu, Yangyi","F","CHN","Huangshi","1994-06-08"),
-( 312,"Giri, Anish","F","RUS","Saint Petersburg","1994-06-28");
+
 
 INSERT INTO versenyzők (id, sakkozoid, nev, orszag)
 VALUES
@@ -673,6 +671,7 @@ INSERT INTO ranglisták (id, datum) VALUES
 ( 49,"2011-07-01"),
 ( 50,"2011-09-01"),
 ( 51,"2011-11-01");
+( 52,"2024-11-02")
 
     INSERT INTO élőpontok (helyezes, pontszam, jatek, versenyzoid, ranglistaid)
 VALUES
