@@ -53,10 +53,30 @@ Egy hacker csoport megtámadta a olimpia szervezetének szervereit. A támadás 
 >Anish Giri egy férfi aki 1994. 06. 28-án született RUS, Saint Petersburg-ban.
 
 3. Feladat:
-A sakk olimpia egyik résztvevője hibát talált a vele kapcsolatban lévő információk között. Ezt jelentette is szakszervezetének és a munkaelosztó téged bízott meg a hiba javításával.
-A hiba jelentője a sakkozók táblában 279-es ID-vel található. Forrásunk szerint nem az általunk bevitt időben született hanem 1987. 03. 10-án.
+A sakk olimpia egyik résztvevője hibát talált a vele kapcsolatban lévő információk között. Ezt jelentette is szakszervezetének és a munkaelosztó téged bízott meg a hiba javításával. A hiba jelentője a sakkozók táblában 279-es ID-vel található. Forrásunk szerint nem az általunk bevitt időben született hanem 1987. 03. 10-án.
 
 4. feladat:
 Egy impostort találtak a ranglisták között az 52. adatnak nem kéne ott lenni. Pusztítsd el.
 
 5. feladat:
+
+5.1. feladat:
+Készítsen lekérdezést, amely megadja azokat a sakkozókat, akiknek nincs feltüntetve a szülővárosa! A sakkozó születési országának kódja és születési neve jelenjen meg ország, azon belül név szerinti ábécérendben!
+
+5.2. feladat:
+Készítsen lekérdezést, amely kilistázza azokat a sakkozókat, akik versenyeztek születési országuk színeiben! A születési nevet és az országot jelenítse meg!
+
+5.3. feladat:
+Készítsen lekérdezést, amely megadja, hogy a Szovjetunióban (URS) született versenyzők mely országok színeiben kerültek ranglistára! Ügyeljen arra, hogy minden ország pontosan egyszer szerepeljen!
+
+5.4. feladat:
+Készítsen jelentést, amely a magyar színekben versenyzők adatait jeleníti meg! Az adatokat a versenyző neve szerint csoportosítva, a ranglista dátuma szerint rendezve jelenítse meg! A jelentést – az oszlopok sorrendjét, a jelentésfej és oszlopfejek tartalmát tekintve – az alábbi minta szerint alakítsa ki! Ügyeljen a jelentésfej ékezethelyességére! A jelentést lekérdezéssel vagy ideiglenes táblával készítse elő!
+
+5.5. feladat:
+A feldolgozott időszak kezdetén januárban, áprilisban, júliusban és októberben tették közé az Élő-pontszámok alapján készített ranglistát. Készítsen lekérdezést, amely megadja azt a dátumot, amikor első ízben eltértek ettől!
+
+5.6. feladat:
+Készítsen lekérdezést, amely megadja, hogy melyik sakkozó hány évesen szerepelt először a legjobb 10 között az adatbázis ranglistáin! A születési nevet, az évszámok alapján meghatározott kort és az első szereplés dátumát jelenítse meg! A lista legyen kor szerint növekvően rendezett! Az eredményben az oszlopneveket az alábbi minta szerint adja meg! 
+
+5.7. feladat:
+Kramnik (születési neve: „Kramnik, Vladimir”) minden ranglistán szerepelt. Az alábbi lekérdezés meghatározza, hogy az egyes listákon mennyit változott a helyezése és a pontszáma az előzőhöz képest. A negatív érték a rontást, a pozitív a javítást jelenti. Készítse el a 8seged lekérdezést, amelyet felhasználva az alábbi lekérdezés a feladatot megoldja!
