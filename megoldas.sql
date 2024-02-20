@@ -20,3 +20,12 @@
 
 
 -- (9. feladat:)
+
+
+-- (10. feladat:)
+
+
+-- (11. feladat:)
+
+
+-- (12. feladat:)
