@@ -33,6 +33,3 @@ DELETE FROM ranglisták WHERE Id = 52;
 
 
 -- (11. feladat:)
-
-
--- (12. feladat:)
