@@ -29,7 +29,7 @@ __ranglisták__ (*id, datum*)
 
 | Név | Típus | Leírás | Kulcs | Idegen kulcs |
 |:-:|:-:|:-:|:-:|:-:|
-| *Id* | INT | A ranglista azonosítója | X |  |
+| *id* | INT | A ranglista azonosítója | X |  |
 | *datum* | DATE | A ranglista összeállításának dátuma |  |  |
 
 **elopontok** (_helyezes, pontszam, jatek, versenyzoid, ranglistaid_)
@@ -44,6 +44,10 @@ __ranglisták__ (*id, datum*)
 
 
 ![](/képek/tábla.png)
+
+
+Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényezők.
+
 
 1. feladat: 
 A feladatok megoldása előtt futtasa a Sakk.sql állományt.
