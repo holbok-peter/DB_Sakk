@@ -4,7 +4,7 @@ A sakkozók pillanatnyi játékerejét a FIDE-rangsor adja meg, amelyet az Élő
 
 ### Táblák:
 **sakkozók** (*id, szulnev, nem, szulorszag, szulovaros, szuldatum*)
-| Név | Típus | Leírás | Kulcs | Idegen kulcs |
+| Név | Típus | Leírás | Elsődleges kulcs | Idegen kulcs |
 |:-:|:-:|:-:|:-:|:-:|
 | *id* | INT | A sakkozók azonosítója | X |
 | *szulnev* | VARCHAR | A sakkozók szül. neve |  |
@@ -18,7 +18,7 @@ ahol született. Előfordul, hogy az országváltással a sakkozó neve is megv�
 meg a **versenyzők** táblában.
 
 **versenyzők**(*id, sakkozoID, név, ország*)
-| Név | Típus | Leírás | Kulcs | Idegen kulcs |
+| Név | Típus | Leírás | Elsődleges kulcs | Idegen kulcs |
 |--|:-:|:-:|:-:|:-:|
 | *id* | INT | A versenyző azonosítója | X |  |
 | *sakkozoID* | INT | A versenyző mint személy megadó azonosítója |  | X |
@@ -27,14 +27,14 @@ meg a **versenyzők** táblában.
 
 __ranglisták__ (*id, datum*)
 
-| Név | Típus | Leírás | Kulcs | Idegen kulcs |
+| Név | Típus | Leírás | Elsődleges kulcs | Idegen kulcs |
 |:-:|:-:|:-:|:-:|:-:|
 | *id* | INT | A ranglista azonosítója | X |  |
 | *datum* | DATE | A ranglista összeállításának dátuma |  |  |
 
 **elopontok** (_helyezes, pontszam, jatek, versenyzoid, ranglistaid_)
 
-| Név | Típus | Leírás | Kulcs | Idegen kulcs |
+| Név | Típus | Leírás | Elsődleges kulcs | Idegen kulcs |
 |:-:|:-:|:-:|:-:|:-:|
 | *helyezes* | INT | A versenyző helyezése |  |  |
 | *pontszam* | INT | A versenyző által birtokolt pontszám |  |  |
