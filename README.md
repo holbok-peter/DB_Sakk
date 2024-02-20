@@ -70,7 +70,7 @@ Készítsen SQL parnacsot, amely kilistázza azokat a sakkozókat, akik versenye
 Készítsen SQL parnacsot, amely megadja, hogy a Szovjetunióban (URS) született versenyzők mely országok színeiben kerültek ranglistára! Ügyeljen arra, hogy minden ország pontosan egyszer szerepeljen!
 
 5.4. feladat:
-Készítsen jelentést, amely a magyar színekben versenyzők adatait jeleníti meg! Az adatokat a versenyző neve szerint csoportosítva, a ranglista dátuma szerint rendezve jelenítse meg! A jelentést – az oszlopok sorrendjét, a jelentésfej és oszlopfejek tartalmát tekintve – az alábbi minta szerint alakítsa ki! Ügyeljen a jelentésfej ékezethelyességére! A jelentést SQL parnaccsal vagy ideiglenes táblával készítse elő!
+Készítsen lekérdezést, amely a magyar színekben versenyzők adatait jeleníti meg! Az adatokat a versenyző neve szerint csoportosítva, a ranglista dátuma szerint rendezve jelenítse meg! A lekérdezést – az oszlopok sorrendjét, a jelentésfej és oszlopfejek tartalmát tekintve – az alábbi minta szerint alakítsa ki! Ügyeljen a jelentésfej ékezethelyességére! A lekérdezést SQL parnaccsal vagy ideiglenes táblával készítse elő!
 
 5.5. feladat:
 A feldolgozott időszak kezdetén januárban, áprilisban, júliusban és októberben tették közé az Élő-pontszámok alapján készített ranglistát. Készítsen SQL parnacsot, amely megadja azt a dátumot, amikor első ízben eltértek ettől!
