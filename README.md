@@ -45,6 +45,9 @@ __ranglisták__ (*id, datum*)
 
 ![](/képek/tábla.png)
 
+1. feladat: 
+A feladatok megoldása előtt futtasa a Sakk.sql állományt.
+
 
 2. Feladat:
 Egy hacker csoport megtámadta a olimpia szervezetének szervereit. A támadás során több sakk versenyző törlődtek. Illessze be a következő versenyzők adatait a versenyzők listába.
