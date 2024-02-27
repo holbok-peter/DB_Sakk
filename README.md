@@ -62,15 +62,15 @@ Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényez�
 
 5. Készítsen SQL parnacsot, amely megadja azokat a sakkozókat, akiknek nincs feltüntetve a szülővárosa! A sakkozó születési országának kódja és születési neve jelenjen meg ország, azon belül név szerinti ábécérendben! (5. feladat:)
 
-6. Készítsen SQL parnacsot, amely kilistázza azokat a sakkozókat, akik versenyeztek születési országuk színeiben! A születési nevet és az országot jelenítse meg! (6. feladat:)
+6. Készítsen SQL parancsot, amely kilistázza azokat a sakkozókat, akik versenyeztek születési országuk színeiben! A születési nevet és az országot jelenítse meg! (6. feladat:)
 
-7. Készítsen SQL parnacsot, amely megadja, hogy a Szovjetunióban (URS) született versenyzők mely országok színeiben kerültek ranglistára! Ügyeljen arra, hogy minden ország pontosan egyszer szerepeljen! (7. feladat:)
+7. Készítsen SQL parancsot, amely megadja, hogy a Szovjetunióban (URS) született versenyzők mely országok színeiben kerültek ranglistára! Ügyeljen arra, hogy minden ország pontosan egyszer szerepeljen! (7. feladat:)
 
-8. Készítsen lekérdezést, amely a magyar színekben versenyzők adatait jeleníti meg! Az adatokat a versenyző neve szerint csoportosítva, a ranglista dátuma szerint rendezve jelenítse meg! A lekérdezést – az oszlopok sorrendjét, a jelentésfej és oszlopfejek tartalmát tekintve – az alábbi minta szerint alakítsa ki! Ügyeljen a jelentésfej ékezethelyességére! A lekérdezést SQL parnaccsal vagy ideiglenes táblával készítse elő!
+8. Készítsen lekérdezést, amely a magyar színekben versenyzők adatait jeleníti meg! Az adatokat a versenyző neve szerint csoportosítva, a ranglista dátuma szerint rendezve jelenítse meg! A lekérdezést – az oszlopok sorrendjét, a jelentésfej és oszlopfejek tartalmát tekintve – az alábbi minta szerint alakítsa ki! Ügyeljen a jelentésfej ékezethelyességére! A lekérdezést SQL paranccsal vagy ideiglenes táblával készítse elő!
 (8. feladat:)
 
-9. A feldolgozott időszak kezdetén januárban, áprilisban, júliusban és októberben tették közé az Élő-pontszámok alapján készített ranglistát. Készítsen SQL parnacsot, amely megadja azt a dátumot, amikor első ízben eltértek ettől! (9. feladat:)
+9. A feldolgozott időszak kezdetén januárban, áprilisban, júliusban és októberben tették közé az Élő-pontszámok alapján készített ranglistát. Készítsen SQL parancsot, amely megadja azt a dátumot, amikor első ízben eltértek ettől! (9. feladat:)
 
-10. Készítsen SQL parnacsot, amely megadja, hogy melyik sakkozó hány évesen szerepelt először a legjobb 10 között az adatbázis ranglistáin! A születési nevet, az évszámok alapján meghatározott kort és az első szereplés dátumát jelenítse meg! A lista legyen kor szerint növekvően rendezett! Az eredményben az oszlopneveket az alábbi minta szerint adja meg! (10. feladat:)
+10. Készítsen SQL parancsot, amely megadja, hogy melyik sakkozó hány évesen szerepelt először a legjobb 10 között az adatbázis ranglistáin! A születési nevet, az évszámok alapján meghatározott kort és az első szereplés dátumát jelenítse meg! A lista legyen kor szerint növekvően rendezett! Az eredményben az oszlopneveket az alábbi minta szerint adja meg! (10. feladat:)
 
-11. Kramnik (születési neve: „Kramnik, Vladimir”) minden ranglistán szerepelt. Az alábbi SQL parnacs meghatározza, hogy az egyes listákon mennyit változott a helyezése és a pontszáma az előzőhöz képest. A negatív érték a rontást, a pozitív a javítást jelenti. Készítse el a 8seged SQL parnacsot, amelyet felhasználva az alábbi SQL parnacs a feladatot megoldja! (11. feladat:)
+11. Kramnik (születési neve: „Kramnik, Vladimir”) minden ranglistán szerepelt. Az alábbi SQL parancs meghatározza, hogy az egyes listákon mennyit változott a helyezése és a pontszáma az előzőhöz képest. A negatív érték a rontást, a pozitív a javítást jelenti. Készítse el a 8 segéd SQL parancsot, amelyet felhasználva az alábbi SQL parancs a feladatot megoldja! (11. feladat:)
