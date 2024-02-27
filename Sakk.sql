@@ -673,8 +673,8 @@ INSERT INTO ranglisták (id, datum) VALUES
 ( 48,"2011-05-01"),
 ( 49,"2011-07-01"),
 ( 50,"2011-09-01"),
-( 51,"2011-11-01");
-( 52,"2024-11-02")
+( 51,"2011-11-01"),
+( 52,"2024-11-02");
 
     INSERT INTO élőpontok (helyezes, pontszam, jatek, versenyzoid, ranglistaid)
 VALUES
