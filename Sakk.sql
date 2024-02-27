@@ -315,10 +315,7 @@ VALUES
 ( 306,"Feller, Sébastien","F","FRA","Thionville","1991-03-11"),
 ( 307,"Lê, Quang Liêm","F","VIE","Ho Chi Minh City","1991-03-13"),
 ( 308,"Caruana, Fabiano Luigi","F","USA","Miami","1992-07-30"),
-( 309,"Ding, Liren","F","CHN","Wenzhou","1992-10-24"),
-( 310,"So, Wesley","F","PHI","Bacoor","1993-10-09"),
-( 311,"Yu, Yangyi","F","CHN","Huangshi","1994-06-08"),
-( 312,"Giri, Anish","F","RUS","Saint Petersburg","1994-06-28");
+( 309,"Ding, Liren","F","CHN","Wenzhou","1992-10-24");
 
 
 INSERT INTO versenyzők (id, sakkozoid, nev, orszag)
@@ -617,12 +614,11 @@ VALUES
 ( 306,306,"Feller, Sebastien","FRA"),
 ( 307,307,"Le, Quang Liem","VIE"),
 ( 308,308,"Caruana, Fabiano","ITA"),
-( 309,309,"Ding, Liren","CHN"),
-( 310,310,"So, Wesley","PHI"),
-( 311,311,"Yu, Yangyi","CHN"),
-( 312,312,"Giri, Anish","NED");
+( 309,309,"Ding, Liren","CHN");
 
-INSERT INTO ranglisták (id, datum) VALUES
+
+ INSERT INTO ranglisták (id, datum)
+ VALUES
 ( 1,"2000-07-01"),
 ( 2,"2000-10-01"),
 ( 3,"2001-01-01"),
@@ -676,7 +672,7 @@ INSERT INTO ranglisták (id, datum) VALUES
 ( 51,"2011-11-01"),
 ( 52,"2024-11-02");
 
-    INSERT INTO élőpontok (helyezes, pontszam, jatek, versenyzoid, ranglistaid)
+INSERT INTO élőpontok (helyezes, pontszam, jatek, versenyzoid, ranglistaid)
 VALUES
 ( 62,2620,51,1,1),
 ( 50,2632,10,1,2),
@@ -5795,31 +5791,4 @@ VALUES
 ( 78,2664,33,309,48),
 ( 93,2654,15,309,49),
 ( 87,2659,10,309,50),
-( 86,2660,11,309,51),
-( 88,2641,29,310,36),
-( 92,2646,22,310,37),
-( 95,2644,9,310,38),
-( 76,2656,8,310,40),
-( 64,2665,22,310,41),
-( 67,2665,0,310,42),
-( 60,2674,18,310,43),
-( 71,2668,19,310,44),
-( 71,2669,19,310,45),
-( 64,2673,18,310,46),
-( 76,2667,19,310,47),
-( 74,2667,0,310,48),
-( 89,2658,23,310,49),
-( 90,2655,23,310,50),
-( 89,2659,13,310,51),
-( 97,2652,27,311,47),
-( 71,2672,33,311,49),
-( 97,2642,24,312,42),
-( 62,2672,25,312,43),
-( 61,2677,19,312,44),
-( 55,2682,12,312,45),
-( 51,2686,7,312,46),
-( 43,2690,15,312,47),
-( 47,2687,22,312,48),
-( 40,2701,12,312,49),
-( 23,2722,19,312,50),
-( 28,2714,14,312,51);
+( 86,2660,11,309,51);

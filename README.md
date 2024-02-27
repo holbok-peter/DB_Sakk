@@ -56,7 +56,7 @@ Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényez�
 >- Yangyi Yu egy férfi aki 1994. 06. 08-án született CHN, Huangshi-ban.
 >- Anish Giri egy férfi aki 1994. 06. 28-án született RUS, Saint Petersburg-ban.
 
-3. A sakk olimpia egyik résztvevője hibát talált a vele kapcsolatban lévő információk között. Ezt jelentette is szakszervezetének és a munkaelosztó téged bízott meg a hiba javításával. A hiba jelentője a sakkozók táblában 279-es ID-vel található. Forrásunk szerint nem az általunk bevitt időben született hanem 1987. 03. 10-án. (3. feladat:)
+3. A sakk olimpia egyik résztvevője hibát talált a vele kapcsolatban lévő információk között. Ezt jelentette is szakszervezetének és a munkaelosztó téged bízott meg a hiba javításával. A hiba jelentője a sakkozók táblában Balogh Csaba néven található. Forrásunk szerint nem az általunk bevitt időben született hanem 1987. 03. 10-án. (3. feladat:)
 
 4. Egy impostort találtak a ranglisták között. Az 52-es azonosítójú sornak nem kéne ott lenni. Pusztítsd el. (4. feladat:)
 
