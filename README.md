@@ -72,5 +72,3 @@ Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényez�
 9. A feldolgozott időszak kezdetén januárban, áprilisban, júliusban és októberben tették közé az Élő-pontszámok alapján készített ranglistát. Készítsen SQL parancsot, amely megadja azt a dátumot, amikor első ízben eltértek ettől! (9. feladat:)
 
 10. Készítsen SQL parancsot, amely megadja, hogy melyik sakkozó hány évesen szerepelt először a legjobb 10 között az adatbázis ranglistáin! A születési nevet, az évszámok alapján meghatározott kort és az első szereplés dátumát jelenítse meg! A lista legyen kor szerint növekvően rendezett! Az eredményben az oszlopneveket az alábbi minta szerint adja meg! (10. feladat:)
-
-11. Kramnik (születési neve: „Kramnik, Vladimir”) minden ranglistán szerepelt. Az alábbi SQL parancs meghatározza, hogy az egyes listákon mennyit változott a helyezése és a pontszáma az előzőhöz képest. A negatív érték a rontást, a pozitív a javítást jelenti. Készítse el a 8 segéd SQL parancsot, amelyet felhasználva az alábbi SQL parancs a feladatot megoldja! (11. feladat:)

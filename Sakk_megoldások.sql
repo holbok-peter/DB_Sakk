@@ -61,5 +61,3 @@ SELECT
 FROM sakkozók
 GROUP BY szulnev, szuldatum
 ORDER BY Eletkor;
-
-
