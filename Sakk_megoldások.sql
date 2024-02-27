@@ -55,11 +55,13 @@ FROM (
 
 -- (10. feladat:)
 SELECT
-    szulnev AS Sakkozo_Neve,
-    DATEDIFF(szuldatum, CURRENT_DATE) AS Eletkor,
-    MIN(szuldatum) AS Elso_Szereples_Datuma
-FROM sakkozók
-GROUP BY szulnev, szuldatum
-ORDER BY Eletkor;
+    s.szulnev AS Sakkozo_Neve,
+    YEAR(CURRENT_DATE) - YEAR(s.szuldatum) AS kor,
+    MIN(s.szuldatum) AS Elso_Szereples_Datuma
+FROM sakkozók s
+JOIN
+  élőpontok é ON s.id = é.versenyzoId
+GROUP BY s.szulnev, s.szuldatum, 
+ORDER BY kor;
 
 
