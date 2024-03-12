@@ -29,9 +29,13 @@ WHERE szulorszag IS NOT NULL;
 
 -- (7. feladat:)
 
-SELECT DISTINCT szulorszag AS Szuletesi_Orszag, orszagok.nev AS Orszag
+SELECT DISTINCT szulorszag AS Szuletesi_Orszag, sakkozók.szulorszag AS Orszag
 FROM sakkozók
-INNER JOIN orszagok ON sakkozók.szulorszag = orszagok.rovid_nev
+WHERE szulorszag = 'URS';
+
+
+SELECT DISTINCT szulorszag AS Szuletesi_Orszag, sakkozók.szulorszag AS Orszag
+FROM sakkozók
 WHERE szulorszag = 'URS';
 
 
@@ -40,12 +44,13 @@ WHERE szulorszag = 'URS';
 
 SELECT sakkozók.szulnev AS Versenyzo_Neve, 
     ranglisták.datum AS Ranglista_Datuma, 
-    ranglisták.helyezes AS Helyezes, 
-    ranglisták.pontszam AS Pontszam
+    élőpontok.helyezes AS Helyezes, 
+    élőpontok.pontszam AS Elo_Pontok
 FROM ranglisták
-INNER JOIN sakkozók ON ranglisták.sakkozo_id = sakkozók.id
-WHERE sakkozók.szulorszag = 'HUN'
-ORDER BY sakkozók.szulnev, ranglisták.datum;
+INNER JOIN sakkozók ON ranglisták.id = sakkozók.id
+INNER JOIN élőpontok ON ranglisták.id = élőpontok.ranglistaId
+WHERE ranglisták.id = élőpontok.ranglistaId
+ORDER BY ranglisták.datum DESC, élőpontok.helyezes DESC;
 
 
 -- (9. feladat:)
@@ -59,9 +64,10 @@ SELECT sakkozók.szulnev AS Sakkozo_Neve,
     YEAR(CURDATE()) - YEAR(sakkozók.szuldatum) - (DATE_FORMAT(CURDATE(), '%m%d') < DATE_FORMAT(sakkozók.szuldatum, '%m%d')) AS kor, 
     MIN(ranglisták.datum) AS Elso_Szereples_Datuma
 FROM ranglisták
-INNER JOIN sakkozók ON ranglisták.sakkozo_id = sakkozók.id
-WHERE ranglisták.helyezes <= 10
-GROUP BY sakkozo_id
-ORDER BY kor;
+INNER JOIN sakkozók ON ranglisták.id = sakkozók.id
+INNER JOIN élőpontok ON ranglisták.id = sakkozók.id
+WHERE élőpontok.helyezes <= 10
+GROUP BY sakkozók.szulnev
+ORDER BY kor DESC, sakkozók.szulnev ASC;
 
 
