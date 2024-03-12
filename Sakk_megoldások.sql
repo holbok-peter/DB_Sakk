@@ -31,33 +31,37 @@ WHERE szulorszag IS NOT NULL;
 
 SELECT DISTINCT szulorszag AS Szuletesi_Orszag, orszagok.nev AS Orszag
 FROM sakkozók
-JOIN orszagok ON sakkozók.szulorszag = orszagok.rovid_nev
+INNER JOIN orszagok ON sakkozók.szulorszag = orszagok.rovid_nev
 WHERE szulorszag = 'URS';
 
 
+
 -- (8. feladat:)
-SELECT szulnev AS Versenyzo_Neve, 
-    datum AS Ranglista_Datuma, 
-    helyezes AS Helyezes, 
-    pontszam AS Pontszam
+
+SELECT sakkozók.szulnev AS Versenyzo_Neve, 
+    ranglisták.datum AS Ranglista_Datuma, 
+    ranglisták.helyezes AS Helyezes, 
+    ranglisták.pontszam AS Pontszam
 FROM ranglisták
-JOIN sakkozók ON ranglisták.sakkozo_id = sakkozók.id
-WHERE szulorszag = 'HUN'
-ORDER BY szulnev, datum;
+INNER JOIN sakkozók ON ranglisták.sakkozo_id = sakkozók.id
+WHERE sakkozók.szulorszag = 'HUN'
+ORDER BY sakkozók.szulnev, ranglisták.datum;
+
 
 -- (9. feladat:)
 SELECT MIN(datum) AS Elso_Eltérés
 FROM ranglisták
 WHERE MONTH(datum) NOT IN (1, 4, 7, 10);
--- a válasz: 2014-02-01
 
 
 -- (10. feladat:)
-SELECT szulnev AS Sakkozo_Neve, 
-    YEAR(CURDATE()) - YEAR(szuldatum) - (DATE_FORMAT(CURDATE(), '%m%d') < DATE_FORMAT(szuldatum, '%m%d')) AS kor, 
-    MIN(datum) AS Elso_Szereples_Datuma
+SELECT sakkozók.szulnev AS Sakkozo_Neve, 
+    YEAR(CURDATE()) - YEAR(sakkozók.szuldatum) - (DATE_FORMAT(CURDATE(), '%m%d') < DATE_FORMAT(sakkozók.szuldatum, '%m%d')) AS kor, 
+    MIN(ranglisták.datum) AS Elso_Szereples_Datuma
 FROM ranglisták
-JOIN sakkozók ON ranglisták.sakkozo_id = sakkozók.id
-WHERE helyezes <= 10
+INNER JOIN sakkozók ON ranglisták.sakkozo_id = sakkozók.id
+WHERE ranglisták.helyezes <= 10
 GROUP BY sakkozo_id
 ORDER BY kor;
+
+
