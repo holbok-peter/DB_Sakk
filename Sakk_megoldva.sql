@@ -47,9 +47,10 @@ FROM versenyzők
 
 -- 8. feladat:
 
-SELECT DISTINCT
+SELECT
   versenyzők.orszag,
-  versenyzők.nev
+  versenyzők.nev,
+  ranglisták.datum  
 FROM élőpontok
   INNER JOIN ranglisták
     ON élőpontok.ranglistaId = ranglisták.id
@@ -58,7 +59,8 @@ FROM élőpontok
   INNER JOIN sakkozók
     ON versenyzők.sakkozoId = sakkozók.id
 WHERE versenyzők.orszag = 'HUN'
-ORDER BY versenyzők.nev DESC;
+GROUP BY versenyzők.nev
+ORDER BY ranglisták.datum;
 
 -- 9. feladat:
 SELECT
