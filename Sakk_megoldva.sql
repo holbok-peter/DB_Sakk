@@ -47,6 +47,18 @@ FROM versenyzők
 
 -- 8. feladat:
 
+SELECT DISTINCT
+  versenyzők.orszag,
+  versenyzők.nev
+FROM élőpontok
+  INNER JOIN ranglisták
+    ON élőpontok.ranglistaId = ranglisták.id
+  INNER JOIN versenyzők
+    ON élőpontok.versenyzoId = versenyzők.id
+  INNER JOIN sakkozók
+    ON versenyzők.sakkozoId = sakkozók.id
+WHERE versenyzők.orszag = 'HUN'
+ORDER BY versenyzők.nev DESC;
 
 -- 9. feladat:
 SELECT
