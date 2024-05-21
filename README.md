@@ -62,12 +62,35 @@ Feltételezheti, hogy az állományban nem lesznek a megoldást zavaró tényez�
 
 5. Készítsen SQL parnacsot, amely megadja azokat a sakkozókat, akiknek nincs feltüntetve a szülővárosa! A sakkozó születési országának kódja és születési neve jelenjen meg ország, azon belül név szerinti ábécérendben!
 
+
+![](/képek/5.feladat.png)
+
+
 6. Készítsen SQL parancsot, amely kilistázza azokat a sakkozókat, akik versenyeztek születési országuk színeiben! A születési nevet és az országot jelenítse meg!
+
+
+![](/képek/6.feladat.png)
+
 
 7. Készítsen SQL parancsot, amely megadja, hogy a Szovjetunióban (URS) született versenyzők mely országok színeiben kerültek ranglistára! Ügyeljen arra, hogy minden ország pontosan egyszer szerepeljen!
 
+
+![](/képek/7.feladat.png)
+
+
 8. Készítsen SQL parancsot, amely a magyar színekben versenyzők adatait jeleníti meg! Az adatokat a versenyző neve szerint csoportosítva, a ranglista dátuma szerint rendezve jelenítse meg!
+
+
+![](/képek/8.feladat.png)
+
 
 9. A feldolgozott időszak kezdetén januárban, áprilisban, júliusban és októberben tették közé az Élő-pontszámok alapján készített ranglistát. Készítsen SQL parancsot, amely megadja azt a dátumot, amikor első ízben eltértek ettől!
 
+
+![](/képek/9.feladat.png)
+
+
 10. Készítsen SQL parancsot, amely megadja, hogy melyik sakkozó hány évesen szerepelt először a legjobb 10 között az adatbázis ranglistáin! A születési nevet, az évszámok alapján meghatározott kort és az első szereplés dátumát jelenítse meg! A lista legyen kor szerint növekvően rendezett!
+
+
+![](/képek/10.feladat.png)

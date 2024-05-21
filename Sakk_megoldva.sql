@@ -46,7 +46,6 @@ FROM versenyzők
     ORDER BY nev;
 
 -- 8. feladat:
-
 SELECT
   versenyzők.orszag,
   versenyzők.nev,
